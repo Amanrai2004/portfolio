@@ -26,6 +26,8 @@
     --shadow:0px 0px 20px 0px rgb(132 144 255 /20%);
     --shadowSupport: 0px 20px 20px 0px rgb(132 144 255 / 30%);
     --icon--bg: #90acd133;
+    --green: #eaec5e;
+    --greens: #f6b39f;
 }
 
 html{
@@ -73,7 +75,7 @@ HEADER SECTION STARTED FRON header
 .header{
     padding: 0 4.8rem;
     height: 10rem;
-    background-color: var(--bg);
+    background-color: var(--green);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,7 +176,7 @@ RESUABLE CODE SECTION START
 HERO SECTION STARTED FRON header
 ================================================================================ */
 .section-hero{
-    background-color: var(--bg);
+    background-color: rgb(139, 231, 139);
 }
 .section-hero-data{
     display: flex;
@@ -319,7 +321,7 @@ bio SECTION STARTED FRON header
 
 
 .section-portfolio{
-    background: var(--bg);
+    background: var(--greens);
     transition: all 0.7s linear;
 }
 .section-portfolio p{
@@ -431,12 +433,13 @@ our services SECTION STARTED
 
 .service-box:hover, .service-box:active{
     transform : translateY(-3rem);
+    background-color: #a0f669;
 }
 
 .service-icon{
     width: 8rem;
     height: 8rem;
-    background-color: #90acd133;
+    background-color: #5692e033;
     display: inline-block;
     border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
     padding: 1.4rem 1.8rem;
@@ -555,3 +558,198 @@ our swiper SECTION STARTED
       border: .5rem;
       color: var(--helper-tint);
   }
+
+  /* ===========================================
+Freelancing Section Start
+======================================= */
+
+.section-freelancing {
+    background-image: url("HatchfulExport-All/image34.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+    transition: all 0.7s linear;
+    text-align: center;
+  }
+  
+  .section-freelancing .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay);
+    opacity: 0.7;
+  }
+  
+  .section-freelancing .container {
+    position: relative;
+  }
+  
+  .section-freelancing h2 {
+    font-size: 5.4rem;
+  }
+  
+  .section-freelancing span {
+    color: #a0f669;
+  }
+  
+  .section-freelancing h2,
+  .section-freelancing p {
+    color: var(--white);
+    margin-bottom: 1.8rem;
+  }
+  
+  /* ===========================================
+  contact Section Start
+  ======================================= */
+  
+  .section-contact-main {
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-top: 9rem;
+    transition: all 0.3s linear;
+  }
+  
+  .section-contact-main .grid {
+    gap: 3.2rem;
+  }
+  
+  .section-contact-main form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  
+  .section-contact-main input,
+  .section-contact-main textarea {
+    padding: 1.5rem 2rem;
+    border: 0.1rem solid #c9c9c9;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: "work sans";
+    width: 100%;
+  }
+  
+  .section-contact-main input[type="submit"] {
+    max-width: 30%;
+    border: none;
+  }
+  
+  /* ===========================================
+  Footer Section Start
+  ======================================= */
+  
+  .section-footer {
+    background: var(--heading);
+    transition: all 0.7s linear;
+  }
+  
+  .section-footer h3 {
+    color: var(--white);
+    margin-bottom: 4rem;
+  }
+  
+  .f-about p {
+    color: #adadad;
+  }
+  
+  .f-links ul,
+  .f-services ul,
+  .f-address address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+  }
+  
+  .f-links li,
+  .f-links a,
+  .f-services li,
+  .f-services a {
+    font-size: 1.8rem;
+    color: #adadad;
+    text-transform: capitalize;
+  }
+  
+  .f-links span,
+  .f-services span,
+  .f-address span {
+    margin-right: 1rem;
+  }
+  
+  .f-address p,
+  .f-address p a {
+    font-style: normal;
+    color: #adadad;
+  }
+  
+  .f-social-icons {
+    margin: 5rem 0;
+    text-align: center;
+    color: #adadad;
+  }
+  
+  .f-social-icons .icons {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--icons-bg);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--white);
+    animation: water-wave 3s linear infinite;
+    cursor: pointer;
+  }
+  
+  .f-credits p {
+    text-align: center;
+    color: #adadad;
+  }
+  
+  .footer a:hover,
+  .footer a:active {
+    color: var(--white);
+  }
+  
+  /* ===========================================
+  Scroll Section Start
+  ======================================= */
+  
+  .scrollTop-style {
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index: 1;
+  }
+  
+  .scroll-top {
+    width: 4rem;
+    height: 4rem;
+    background: var(--helper);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--white);
+    animation: water-wave 3s linear infinite;
+    cursor: pointer;
+  }
+  
+  /* ===========================================
+  /* media queries  
+  ======================================= */
+ 
+  @media (max-width: 95em) {
+    .container {
+      max-width: 130rem;
+      padding: 0 3.2rem;
+    }
+  
+    .navbar-lists {
+      gap: 3.4rem;
+    }
+  }
+  
+  
+  
