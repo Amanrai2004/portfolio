@@ -11,6 +11,7 @@ p_btns.addEventListener('click', (e) => {
    console.log(p_btn_clicked);
 
    p_btn.forEach((curElem) => {
+
        curElem.classList.remove("p-btn-active")
    });
    p_btn_clicked.classList.add("p-btn-active");
